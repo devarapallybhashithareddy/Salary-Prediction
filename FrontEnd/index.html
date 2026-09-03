@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Salary Prediction</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>💰 Salary Prediction</h1>
+        <p class="subtitle">
+            Predict your estimated salary using Machine Learning
+        </p>
+
+        <form id="salaryForm">
+
+            <div class="form-group">
+                <label for="work_year">Work Year</label>
+                <input
+                    type="number"
+                    id="work_year"
+                    value="2023"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="experience_level">Experience Level</label>
+
+                <select id="experience_level" required>
+                    <option value="">Select Experience Level</option>
+                    <option value="EN">Entry Level</option>
+                    <option value="MI">Mid Level</option>
+                    <option value="SE">Senior Level</option>
+                    <option value="EX">Executive Level</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="employment_type">Employment Type</label>
+
+                <select id="employment_type" required>
+                    <option value="">Select Employment Type</option>
+                    <option value="FT">Full Time</option>
+                    <option value="PT">Part Time</option>
+                    <option value="CT">Contract</option>
+                    <option value="FL">Freelance</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="job_title">Job Title</label>
+
+                <input
+                    type="text"
+                    id="job_title"
+                    placeholder="Example: Data Scientist"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="employee_residence">Employee Residence</label>
+
+                <input
+                    type="text"
+                    id="employee_residence"
+                    placeholder="Example: US"
+                    maxlength="2"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="remote_ratio">Remote Ratio</label>
+
+                <select id="remote_ratio" required>
+                    <option value="">Select Remote Ratio</option>
+                    <option value="0">0% - On Site</option>
+                    <option value="50">50% - Hybrid</option>
+                    <option value="100">100% - Remote</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="company_location">Company Location</label>
+
+                <input
+                    type="text"
+                    id="company_location"
+                    placeholder="Example: US"
+                    maxlength="2"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="company_size">Company Size</label>
+
+                <select id="company_size" required>
+                    <option value="">Select Company Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+
+
+            <button type="submit">
+                Predict Salary
+            </button>
+
+        </form>
+
+
+        <div id="result" class="result">
+            Your predicted salary will appear here.
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
