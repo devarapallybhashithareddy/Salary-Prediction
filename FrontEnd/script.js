@@ -29,7 +29,7 @@ salaryForm.addEventListener("submit", async function (event) {
         result.innerHTML = "🤖 Our model is analyzing your information...";
 
         const response = await fetch(
-            "http://127.0.0.1:5000/predict",
+            "https://salary-prediction-uxlc.onrender.com/predict",
             {
                 method: "POST",
                 headers: {
